@@ -44,13 +44,13 @@ $(document).ready(function(){
             	counter2 += 2
                 $("#correct").text(counter2)
                 alert("Exactly Correct! You got 2 point.")
-                setTimeout(autoLable,4000)
+                setTimeout(autoLable,2000)
             }
             else{
             	counter2 += 1
                 $("#correct").text(counter2)
                 alert("Nearly Correct.Yet you got 1 point.")
-                setTimeout(autoLable,4000)
+                setTimeout(autoLable,2000)
             }
         }
         else if(dif >= -3 && dif <= 0 ){
@@ -58,25 +58,25 @@ $(document).ready(function(){
             	counter2 += 2
                 $("#correct").text(counter2)
                 alert("Exactly Correct! You got 2 point.")
-                setTimeout(autoLable,4000)
+                setTimeout(autoLable,2000)
             }
             else{
             	counter2 += 1
                 $("#correct").text(counter2)
                 alert("Nearly Correct. Yet you got 1 point.")
-                setTimeout(autoLable,4000)
+                setTimeout(autoLable,2000)
             }
         }
         else{
             counter += 1
             $("#incorrect").text(counter)
             if (dif > 3){
-                alert("Not Correct! \nGuessed too low. You got -1 point.")
-                setTimeout(autoLable,4000)
+                alert("Not Correct! \nGuessed too low. You got -1 point. Try again.")
+                // setTimeout(autoLable,4000)
             }
             else{
-                alert("Not Correct! \nGuessed too high. You got -1 point.")
-                setTimeout(autoLable,4000)
+                alert("Not Correct! \nGuessed too high. You got -1 point. Try again.")
+                // setTimeout(autoLable,4000)
             }
         }
     }
